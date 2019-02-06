@@ -1,0 +1,83 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fly Master - Page 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css"/> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/page2.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/modal.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header__title">Fly Master</h1>
+        <button id="save" type="submit" name="butAdd1" class="headerButton">Add 1</button>
+        <div hidden id="user-pic"></div>
+        <div hidden id="user-name"></div>
+    </header>
+
+    <main class="main">
+
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Modal Header</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                </div>
+                <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                </div>
+            </div>
+        
+        </div>
+
+        <h1 id="textTop">beginning</h1>
+
+        <div class="grid-container" id="cardStock"></div>
+
+        <!-- <div id="messages">
+            <span id="message-filler"></span>
+        </div> -->
+
+        <form>
+            <textarea id="testText"></textarea>
+            <button id="addFly" type="submit" name="addFly" class="headerButton">Add Fly</button>
+        </form>
+
+        <div class="grid-container" id="cardContainer"></div>
+        <h1 id="textBottom">ending</h1>
+    </main>
+
+
+    <!-- Import and configure the Firebase SDK -->
+    <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+    <!-- If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+    <script src="/__/firebase/5.7.3/firebase-app.js"></script>
+    <script src="/__/firebase/5.7.3/firebase-auth.js"></script>
+    <script src="/__/firebase/5.7.3/firebase-storage.js"></script>
+    <script src="/__/firebase/5.7.3/firebase-messaging.js"></script>
+    <script src="/__/firebase/5.7.3/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    
+    <script src="scripts/page2.js"></script>
+    <script src="scripts/modal.js"></script>
+
+</body>
+
+</html>
