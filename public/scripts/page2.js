@@ -3,8 +3,8 @@ function saveMessage(messageText) {
     // Add a new message entry to the Firebase database.
     window.alert('fart');
     return firebase.firestore().collection('messages').add({
-        name: "THIS IS ANOTHER TEST",
-        text: "ALSO A TEST",
+        name: "finalTest",
+        text: "hopefully",
         profilePicUrl: getProfilePicUrl(),
         timestamp: firebase.firestore.FieldValue.serverTimestamp()
     }).catch(function (error) {
@@ -20,14 +20,14 @@ function testFunction(id) {
 function displayMessage(id, timestamp, name, text, picUrl, imageUrl) {
     var fart = '';
     iterator = iterator + 1;
-    fart += `<div onclick="testFunction()" class="card">
+    t = "testFunction(\""+name+"\")"
+    fart += `<div onclick=` +t+ ` class="card">
                 <img src="images/img_avatar.png" alt="Avatar" style="width:100%">
                 <div class="container">
                     <div class="name"><b>` + name + `</b></div>
                     <div class="string">` + text + `</div>
                 </div>
             </div>`
-
     document.getElementById('cardStock').innerHTML += fart;
 }
 
